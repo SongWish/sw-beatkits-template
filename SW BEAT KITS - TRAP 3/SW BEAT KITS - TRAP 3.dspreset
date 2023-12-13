@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Instrument: SW BEAT KITS - TRAP 3 (DS)
+    Preset: 01 - SongWish Inc. | Version: 1.0.0
+    Designer: Brandon Liston (SongWish Inc.)
+    License: GNU GPL v3.0
+    GitHub: https://github.com/songwish/sw-beatkits-template
+
+    Visit SongWish Inc. at https://www.songwish.ca
+
+-->
+
+<DecentSampler minVersion="1.7.3">
+
+    <ui width="812" height="375" coverArt="UI/Panels/Panel.png" bgImage="UI/Panels/Panel.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
+
+        <tab name="main">
+        
+            <!-- UI 00 :: LABEL (808) -->
+      
+            <label x="142" y="36" width="72" height="48" text="808" textSize="22" hAlign="left" textColor="FFA653F5" />
+      
+            <!-- UI 01 :: KNOB A > 808 Group [Volume] -->
+            
+            <control x="94" y="36" width="48" height="48" parameterName="808_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="0" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+            
+            <!-- UI 02 :: LABEL (KICK) -->
+      
+            <label x="282" y="36" width="68" height="48" text="KICK" textSize="22" hAlign="left" textColor="FF8F8CF2" />
+            
+            <!-- UI 03 :: KNOB B > KICK Group [Volume] -->
+            
+            <control x="234" y="36" width="48" height="48" parameterName="KICK_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Kick_Volume_Knob_#8F8CF2.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+            
+            <!-- UI 04 :: LABEL (SNARE) -->
+
+            <label x="424" y="36" width="70" height="48" text="SNARE" textSize="22" hAlign="left" textColor="FFF96CFF" />
+
+            <!-- UI 05 :: KNOB C > SNARE Group [Volume] -->
+            
+            <control x="376" y="36" width="48" height="48" parameterName="SNARE_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Snare_Volume_Knob_#F96CFF.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+            </control>
+            
+            <!-- UI 06 :: LABEL (HAT) -->
+
+            <label x="570" y="36" width="72" height="48" text="HAT" textSize="22" hAlign="left" textColor="FFFA92FB" />  
+
+            <!-- UI 07 :: KNOB D > HAT Group [Volume] -->
+            
+            <control x="518" y="36" width="48" height="48" parameterName="HAT_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Hat_Volume_Knob_#FA92FB.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+            </control>
+
+            <!-- UI 08 :: LABEL (MELODIC) -->
+
+            <label x="716" y="36" width="72" height="48" text="MELODIC" textSize="22" hAlign="left" textColor="FF65B8BF" />  
+
+            <!-- UI 09 :: KNOB E > MELODIC Group [Volume] -->
+            
+            <control x="664" y="36" width="48" height="48" parameterName="MELODIC_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+            </control>
+
+        </tab>
+      
+        <keyboard>
+
+            <color loNote="0" hiNote="22" color="A653F5" /><!-- 808 -->
+            <color loNote="23" hiNote="23" color="8F8CF2" /><!-- KICK -->
+            <color loNote="24" hiNote="35" color="F96CFF" /><!-- SNARE -->
+            <color loNote="36" hiNote="59" color="FA92FB" /><!-- HAT -->
+            <color loNote="60" hiNote="127" color="65B8BF" /><!-- MELODIC -->
+
+        </keyboard>
+
+    </ui>
+
+    <groups attack="0.01" decay="0.05">
+
+        <group name="808">
+
+            <sample path="Samples/SW BEAT KITS - TRAP 3 - 808.wav" rootNote="5" loNote="0" hiNote="22" loVel="1" hiVel="127"/>
+        
+        </group>
+
+        <group name="kick">
+
+            <sample path="Samples/SW BEAT KITS - TRAP 3 - KICK.wav" rootNote="23" loNote="23" hiNote="23" loVel="1" hiVel="127"/>
+        
+        </group>
+
+        <group name="snare">
+
+            <sample path="Samples/SW BEAT KITS - TRAP 3 - SNARE.wav" rootNote="32" loNote="24" hiNote="35" loVel="1" hiVel="127"/>
+        
+        </group>
+
+        <group name="hat">
+
+            <sample path="Samples/SW BEAT KITS - TRAP 3 - HAT.wav" rootNote="52" loNote="36" hiNote="59" loVel="1" hiVel="127"/>
+        
+        </group>
+
+        <group name="melody">
+
+            <sample path="Samples/SW BEAT KITS - TRAP 3 - MELODIC.wav" rootNote="96" loNote="60" hiNote="127" loVel="1" hiVel="127"/>
+        
+        </group>
+
+    </groups>
+
+</DecentSampler>
