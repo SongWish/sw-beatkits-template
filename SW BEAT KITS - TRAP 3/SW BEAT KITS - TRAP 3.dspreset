@@ -25,6 +25,22 @@
                 <binding type="amp" level="group" position="0" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
             </control>
+
+            <label x="142" y="45" width="72" height="48" text="808 attack" textSize="22" hAlign="left" textColor="FFA653F5" />
+            
+            <control x="94" y="45" width="48" height="48" parameterName="808_ATTACK" type="float" minValue="0.01" maxValue="2.0" value="0.01" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+
+            <label x="142" y="90" width="72" height="48" text="808 release" textSize="22" hAlign="left" textColor="FFA653F5" />
+            
+            <control x="94" y="90" width="48" height="48" parameterName="808_RELEASE" type="float" minValue="0.1" maxValue="8.0" value="0.45" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
       
             <label x="282" y="5" width="68" height="48" text="KICK volume" textSize="22" hAlign="left" textColor="FF8F8CF2" />
             
@@ -57,66 +73,18 @@
                 <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
-      
-            <label x="142" y="45" width="72" height="48" text="808 attack" textSize="22" hAlign="left" textColor="FFA653F5" />
+
+            <label x="716" y="45" width="72" height="48" text="MELODIC attack" textSize="22" hAlign="left" textColor="FF65B8BF" />
             
-            <control x="94" y="45" width="48" height="48" parameterName="808_ATTACK" type="float" minValue="0.01" maxValue="2.0" value="0.01" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="0" parameter="ENV_ATTACK" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-      
-            <label x="282" y="45" width="72" height="48" text="808 decay" textSize="22" hAlign="left" textColor="FFA653F5" />
-            
-            <control x="234" y="45" width="48" height="48" parameterName="808_DECAY" type="float" minValue="0.0" maxValue="2.0" value="0.05" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="0" parameter="ENV_DECAY" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-
-            <label x="424" y="45" width="72" height="48" text="808 sustain" textSize="22" hAlign="left" textColor="FFA653F5" />
-            
-            <control x="376" y="45" width="48" height="48" parameterName="808_SUSTAIN" type="float" minValue="0.0" maxValue="2.0" value="2.0" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="0" parameter="ENV_SUSTAIN" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-
-            <label x="570" y="45" width="72" height="48" text="808 release" textSize="22" hAlign="left" textColor="FFA653F5" />
-            
-            <control x="518" y="45" width="48" height="48" parameterName="808_RELEASE" type="float" minValue="0.1" maxValue="8.0" value="0.15" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/808_Volume_Knob_#A653F5.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="0" parameter="ENV_RELEASE" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-      
-            <label x="142" y="90" width="72" height="48" text="MELODIC attack" textSize="22" hAlign="left" textColor="FF65B8BF" />
-            
-            <control x="94" y="90" width="48" height="48" parameterName="MELODIC_ATTACK" type="float" minValue="0.01" maxValue="2.0" value="0.01" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
+            <control x="664" y="45" width="48" height="48" parameterName="MELODIC_ATTACK" type="float" minValue="0.01" maxValue="2.0" value="0.01" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="4" parameter="ENV_ATTACK" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
             </control>
-      
-            <label x="282" y="90" width="72" height="48" text="MELODIC decay" textSize="22" hAlign="left" textColor="FF65B8BF" />
+
+            <label x="716" y="90" width="72" height="48" text="MELODIC release" textSize="22" hAlign="left" textColor="FF65B8BF" />
             
-            <control x="234" y="90" width="48" height="48" parameterName="MELODIC_DECAY" type="float" minValue="0.05" maxValue="2.0" value="0.05" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="4" parameter="ENV_DECAY" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-
-            <label x="424" y="90" width="72" height="48" text="MELODIC sustain" textSize="22" hAlign="left" textColor="FF65B8BF" />
-            
-            <control x="376" y="90" width="48" height="48" parameterName="MELODIC_SUSTAIN" type="float" minValue="0.0" maxValue="2.0" value="2.0" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
-
-                <binding type="amp" level="group" position="4" parameter="ENV_SUSTAIN" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-            </control>
-
-            <label x="570" y="90" width="72" height="48" text="MELODIC release" textSize="22" hAlign="left" textColor="FF65B8BF" />
-            
-            <control x="518" y="90" width="48" height="48" parameterName="MELODIC_RELEASE" type="float" minValue="0.1" maxValue="8.0" value="0.15" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
+            <control x="664" y="90" width="48" height="48" parameterName="MELODIC_RELEASE" type="float" minValue="0.1" maxValue="8.0" value="0.45" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Melodic_Volume_Knob_#65B8BF.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="4" parameter="ENV_RELEASE" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
